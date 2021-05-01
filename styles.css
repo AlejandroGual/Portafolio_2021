@@ -8,199 +8,249 @@
 
 body{
     font-size: 16px;
+    
+}
+/* Boton Whatsapp */
+.btn-wsp{
+    position:fixed;
+    width:60px;
+    height:60px;
+    line-height: 63px;
+    bottom:25px;
+    right:25px;
+    background:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:35px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+    z-index:100;
+    transition: all 300ms ease;
+}
+.btn-wsp:hover{
+    background: #FFF;
+    color: #25d366;
+}
+/* End Boton Whatsapp */
+.nombre{
+    font-family: 'Sacramento', cursive;
+}
+/* Start header */
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* Start Header */
-.header{
+.bg_animate{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #FAD961,#F76B1C);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.banner{
     display: flex;
     justify-content: space-between;
-    background-color: #07528D;
-}
-.header__img--img{
-    width:100px;
-}
-.header__nav{
-    display: flex;
-    align-self:center; 
-    margin-right: 10%;
-}
-
-.header__nav--li{
-    list-style: none;
-    padding:5px;
-    margin-left:20px;
-    display:flex;
     align-items: center;
-    margin-right: 20px;
-    
+    height: 100%;
 }
-.header__nav--li a{
+
+.banner_title h2{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.banner_title .llamanos{
+    color: #fff;
+    font-size: 20px;
     text-decoration: none;
-    color: white;
-}
-/* clic hoja de vida */
-.header__nav--li a:hover{
-    color: rgb(43, 53, 40);
+    display: inline-block;
+    background: #1A2849;
+    padding: 20px;
 }
 
-/* End Header */
-
-/* Start Main */
-/* contenedor Hola */
-
-/* parrafo hola! */
-
-.main__parrafo{
-    padding-top: 125px;
-    color:white;
-    font-size: 25px;
-    background-color:#07528D;
-    height: 400px;
-    display: flex;
-    
+.banner_img{
+    animation: movimiento 2.5s linear infinite;
 }
-.main__parrafo h1{
-    margin-left: 100px;
-}
-/* Quien soy? */
-.main__about--container{
-    font-size:16px;
-    border: 1px solid #d8f3dc;
+
+.banner_img img{
     width: 600px;
-    padding: 10px;
-    height: 200px;
-    background-color: #d8f3dc;
+    display: block;
+}
+
+/* burbujas */
+
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation: burbujas 3s linear infinite ;
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* End header */
+
+
+
+
+/* Start main */
+.about{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border-top-left-radius:15px; 
+    flex-direction: column;
+    border: 1px solid black;
+    width: 1000px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: calc(50% - 490px);
+    padding: 15px;
+   background-color: whitesmoke;
+    
 }
-.main__about__container{
-    display: flex;
-    justify-content: center;
-    margin-top: -50px;
-    height: 300px;
-}
-/* contenedor Potafolio */
-.experiencia{
-    height: 50px;
-    display: flex;
+
+
+.about__container1{
+    display:flex ;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
-.carousel {
-    width: 100%;
-    overflow: scroll;
-    padding: 30px;
-    position: relative;
+.about__container1 h2{
+    font-size: 2rem;
+    font-family: 'Sacramento', cursive;
+}
+.about__container2{
     display: flex;
     justify-content: center;
-}
-.carousel__container {
-    white-space: nowrap;
-    margin: 70px 0px;
-    padding-bottom: 10px; 
-    display: flex;
-    justify-content: space-around;
-    background-color: #0077b6;
-    height: 500px;
     align-items: center;
+    padding-top: 25px;
+    text-align: center  ;
 }
-.carousel-item {
-    background-color: palevioletred;
-    width: 200px;
-    height: 250px;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-right: 10px;
-    display: inline-block;
-    cursor: pointer;
-    transition: 450ms all;
-    transform-origin: center left;
-    position: relative;
+.about__container2 p{
+    font-size: 1.6rem;
+    font-family: 'Scheherazade', serif;
 }
-  .carousel-item:hover ~ .carousel-item {
-    transform: translate3d(100px, 0, 0);
-  }
-  .carousel__container:hover .carousel-item {
-    opacity: 0.3;
-  }
-  .carousel__container:hover .carousel-item:hover {
-    transform: scale(1.5);
-    opacity: 1;
-  }
-  .carousel-item__img {
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-  }
-  .carousel-item__details {
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
-    font-size: 10px;
-    opacity: 0;
-    transition: 450ms opacity;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-/* End Portafolio */
-
-.conocimientos{
- height: 500px;
- display: flex;
- flex-direction: column;
- justify-content:center
+.about__container2 p a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color:#8EBE3F;
 }
-.conociminetos__h2{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-bottom: 75px;
-}
-.conocimientos h2{
-    border-top: 5px solid white;
-    border-right: 5px solid white;
-    padding-right: 5px;
-}
-
-.conocimientos__img img{
-    width: 150px;
-    display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.conocimientos__img{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.conocimientos__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/* End main */
-
-/* Start footer */
-footer{
-    display: flex;
-    justify-content:space-between;
-    height: 200px;
-    align-items: flex-end;
-    background-color: #caf0f8;
-}
-.footer__redes a img{
-    width:30px;
-    margin-right: 10px;
-}
-.footer__derechos{
-    display: flex;
-}
-
-
-
