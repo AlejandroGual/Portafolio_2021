@@ -9,52 +9,112 @@
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Scheherazade&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 <body>
     <a href="https://wa.me/593992139854" class="btn-wsp" target="_blank">
 	    <i class="fa fa-whatsapp icono"></i>
 	</a>
-    <header class="bg_animate">
-       
-
-        <section class="banner contenedor">
-            <secrion class="banner_title">
-                <h2>Hola! <br> <span class="typed"></span> </h2>
-                
-            </secrion>
-            <div class="banner_img">
-                <img src="./img/WhatsApp Image 2021-04-30 at 21.36.02.jpeg" alt="">
-            </div>
-        </section>
-
-        <div class="burbujas">
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
-            <div class="burbuja"></div>
+    <header class="header">
+        <div class="header__container">
+            <h3>Geovanny Gualotuña </h3>
         </div>
+       <nav class="header__nav">
+           <ul >
+               <li><a href="#about">Quien soy?</a></li>
+               <li><a href="#proyectos">Proyectos</a></li>
+               <li><a href="">Contacto</a></li>
+           </ul>
+        </nav>
+
     </header>
     <main>
-        <section class="about">
+        <section class="main__container">
+                <div class="main__container--title">
+                    <h1>
+                        Hola! <br> <span class="typed"></span>
+                    </h1>
+                </div>
+                <div>
+                    <h2>Front-End Developer</h2>
+                </div>
+        </section>
+
+        <section class="about" id="#about">
             <div class="about__container1">
                 <img src="./img/heading_border_left.png" alt=""><h2>¿Quien Soy?</h2> <img src="./img/heading_border_right.png" alt="">
             </div>
-            
-       
-            <div class="about__container2">
-                <p>Soy un joven apasionado por la tecnologia, tengo 17 años y desde hace 1 año que estudio desarrollo web lo cual cada día que pasa me atrae mas este ambito profesional ye dejo mis proyectos realizados con cursos de <a href="https://platzi.com/home">Platzi</a></p>
+            <div class="about__container2" >
+                <p>Soy un joven apasionado por la tecnologia, tengo 17 años y desde hace 1 año que estudio desarrollo web lo cual cada día que pasa me atrae mas este ambito profesional te dejo mis proyectos realizados con cursos de <a href="https://platzi.com/home">Platzi</a></p>
             </div>
         </section>
+        <div class="proyects" id="#proyectos">
+            <img src="./img/heading_border_left.png" alt=""><h2>Proyectos</h2> <img src="./img/heading_border_right.png" alt="">
+        </div>
+        <!-- Inicia Carusel -->
+        <div class="carousel__container">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/foto_no_exif.jpg" class="d-block w-100" alt="...">
+                    <div class="carrusel__containerInfo">
+                        <h1> <a href="">Clon Página Principal Google</a></h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/foto_no_exif.jpg" class="d-block w-100" alt="...">
+                    <div class="carrusel__containerInfo">
+                        <h1> <a href="">Hola</a> </h1>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/foto_no_exif.jpg" class="d-block w-100" alt="...">
+                    <div class="carrusel__containerInfo">
+                        <h1> <a href="">Chao</a></h1>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <!-- Termina carrusel -->
+       <!-- Contacto -->
+       <div class="contacto" id="#contactame">
+        <img src="./img/heading_border_left.png" alt=""><h2>Contactame</h2> <img src="./img/heading_border_right.png" alt="">
+    </div>
+    <section class="contact__container">
+        <h3>
+            Geovanny Gualotuña
+        </h3>
+        <h6>
+            Contactame
+        </h6>
+       <div class="contact__container--items">
+           <div class="contact__container--email" >
+                <img src="./img/new_message_envelope_icon_124221.png" alt="">
+                <p>Geova12.gual@gmail.com</p>
+           </div>
+            <div class="contact__container--phone">
+                <img src="./img/auricular-phone-symbol-in-a-circle_icon-icons.com_56570.png" alt="">
+                <p> +593 99213 9854</p>
+            </div>
+ 
+    </section>
+
+
     </main>
     
             
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="./typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>
 
