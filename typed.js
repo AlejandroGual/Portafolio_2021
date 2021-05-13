@@ -1,8 +1,6 @@
 var typed = new Typed('.typed', {
 	strings: [
-		'<i class="nombre">Soy Geovanny </i>',
-        
-		
+		'<i class="nombre">Soy Geovanny </i>'	
 	],
 	stringsElement: '#cadenas-texto', 
 	typeSpeed: 75,
